@@ -1,5 +1,5 @@
-import React, { createContext, useState } from 'react';
-import { createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import React, { createContext, useEffect, useState } from 'react';
+import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import { app } from '../../../public/firebase.confiq';
 export const AuthContext = createContext(null);
 
@@ -16,10 +16,24 @@ const signIn = (email, password)=>{
     return signInWithEmailAndPassword(auth, email, password);
 }
 
+const LogOut = ()=>{
+    return signOut(auth)
+}
+
+useEffect(()=>{
+   const unsub =  onAuthStateChanged(auth, currentUser=>{
+        setUser(currentUser)
+    });
+    return ()=>{
+        return unsub();
+    }
+},[])
+
     const authInfo = {
         user,
         createUser,
         signIn,
+        LogOut,
     };
 
     return (

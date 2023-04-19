@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from './AuthProvider';
 
 const Register = () => {
-
+   const [show, setShow] = useState(true);
     const [error, setError] = useState('');
     const {createUser} = useContext(AuthContext);
 
@@ -48,7 +48,7 @@ const Register = () => {
                                 <label className="label">
                                     <span className="label-text">Name</span>
                                 </label>
-                                <input required type="text" placeholder="name" name='name' className="input input-bordered" />
+                                <input  type="text" placeholder="name" name='name' className="input input-bordered" />
                             </div>
                             <div className="form-control">
                                 <label className="label">
@@ -60,14 +60,16 @@ const Register = () => {
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input required type="password" name='password' placeholder="password" className="input input-bordered" />
+                                <input required type={!show ? 'text' : "password"} name='password' placeholder="password" className="input input-bordered" />
+                                
                                
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Confirm Password</span>
                                 </label>
-                                <input required type="password" name='confirm'  placeholder="confirm password" className="input input-bordered" />
+                                <input required type={!show ? "text" : "password"} name='confirm'  placeholder="confirm password" className="input input-bordered" />
+                                <h2 onClick={()=>setShow(!show)}>Show Password</h2>
                                 <label className="label">
                                     <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                                 </label>
