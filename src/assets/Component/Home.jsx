@@ -5,7 +5,7 @@ import SubHome from './SubHome';
 
 const Home = () => {
     const load = useLoaderData([]);
-    console.log(load)
+    // console.log(load)
     return (
         <div>
             <h3 className='text-2xl text-center'>This is home</h3>
