@@ -3,7 +3,7 @@ import { FaBed , FaCreativeCommonsBy , FaGalacticRepublic } from "react-icons/fa
 
 const SubHome = ({main}) => {
     return (
-        <div className='bg-slate-100 p-5 rounded-xl'>
+        <div className='bg-slate-200 p-5 rounded-xl'>
             <img className='w-[80%] mx-auto' src={main.img} alt="" />
             <h2 className='text-center text-xl'>{main.name}</h2>
         <div className='flex justify-between gap-2 items-center'>
