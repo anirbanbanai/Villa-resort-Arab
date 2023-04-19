@@ -1,0 +1,44 @@
+[
+      {
+        "id": 1,
+        "name": "Item 1",
+        "img": "https://static01.nyt.com/images/2019/03/24/travel/24trending-shophotels1/24trending-shophotels1-superJumbo.jpg",
+        "price":"$200",
+        "per":"single",
+        "bed":"1"
+      },
+      {
+        "id": 2,
+        "name": "Item 2",
+        "img": "https://www.europahotelbelfast.com/wp-content/uploads/2021/10/bedrooms_europahotelclassicbedroom20202-1366x768-fp_mm-fpoff_0_0.jpg",
+        "price":"$300",
+        "per":"Double",
+        "bed":"2"
+      },
+      {
+        "id": 3,
+        "name": "Item 3",
+        "img": "https://www.europahotelbelfast.com/wp-content/uploads/2021/10/bedrooms_europahotelsuperiorbedroom20201-1366x768-fp_mm-fpoff_0_0.jpg",
+        "price":"$400",
+        "per":"single",
+        "bed":"1"
+      },
+      {
+        "id": 4,
+        "name": "Item 4",
+        "img": "https://q-xx.bstatic.com/xdata/images/hotel/840x460/378408295.jpg?k=22ae40ab7b121c40af840638c07cbfe06f97d601d5717423b6a3e19b17295374&o=",
+        "price":"$250",
+        "per":"Double",
+        "bed":"3"
+      },
+      {
+        "id": 5,
+        "name": "Item 5",
+        "img": "https://www.hotelscombined.co.uk/himg/09/aa/b7/expediav2-35371-242561393-386871.jpg",
+        "price":"$600",
+        "per":"Family",
+        "bed":"4"
+      }
+    ]
+  
+  
