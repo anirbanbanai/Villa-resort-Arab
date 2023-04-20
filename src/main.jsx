@@ -13,6 +13,7 @@ import Login from './assets/Component/Login';
 import Register from './assets/Component/Register';
 import Booked from './assets/Component/Booked';
 import AuthProvider from './assets/Component/AuthProvider';
+import PrivetRoute from './assets/Component/PrivetRoute';
 
 
 const router = createBrowserRouter([
@@ -35,7 +36,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/booked",
-        element: <Booked></Booked>
+        element: <PrivetRoute><Booked></Booked></PrivetRoute>
       },
       
     ]
